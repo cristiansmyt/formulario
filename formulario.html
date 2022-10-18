@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário </title>
+</head>
+<body>
+    <form method="get">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="idnome"> Nome </label>
+            <input type="text" name="idnome" id="idnome">
+            <br><br>
+            <label for="iddatadenas"> Data de Nascimento </label>
+            <input type="date" name="iddatadenas" id="iddatadenas">
+            <br><br>
+            <label for="idemail"> Email </label>
+            <input type="text" name="idemail" id="idemail">
+            <br><br>
+            <label for="idtelefone"> Telefone </label>
+            <input type="text" name="idtelefone" id="idtelefone">
+            
+        </fieldset>
+    </form>
+    <form method="get">
+        <fieldset>
+            <legend> Dados Acadêmicos</legend>
+            <label for="idcurso"> Curso</label>
+            <select name="idcurso">
+                <option value="ads">Análise Desenvolvimento Sistema</option>
+                <option value="cd">Ciência de Dados</option>
+                <option value="si">segurança da informação</option>
+                <option value="gti">Gestão da tecnologia da Informação</option>
+                </select>
+                <br><br>
+                <label for="idsemestre">Semestre</label>
+                <label for="id1º">1º</label>
+                <input type="radio" name="semestre" value="1º" id="id1º">
+                <label for="id2º">2º</label>
+                <input type="radio" name="semestre" value="2º" id="id2º">
+                <label for="id3º">3º</label>
+                <input type="radio" name="semestre" value="3º" id="id3º">
+                <label for="id4º">4º</label>
+                <input type="radio" name="semestre" value="4º" id="id4º">
+
+            
+        </fieldset>
+    </form>
+    <form method="get">
+        <fieldset>
+            <label for="idtrabalho"> Trabalho: </label>
+            <label for="idsim">Sim</label>
+            <input type="radio" name="trabalho" value="sim" id="idsim">
+            <label for="idnao">Não</label>
+            <input type="radio" name="trabalho" value="nao" id="idnao">
+            <br><br>
+            <label for="idlocaldetrabalho">Local de Trabalho</label>
+            <input type="text" name="localdetrabalho" id="idlocaldetrabalho">
+            <br><br>
+            <label for="iddescreva">Descreva sua Experiência</label>
+            <br>
+            <textarea id="iddescreva" name="descreva" rows="4" cols="58"></textarea>
+            <br>
+            <input type="reset" value="limpar">
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+    <a href="index.html">Retornar</a>
+</body>
+</html>
